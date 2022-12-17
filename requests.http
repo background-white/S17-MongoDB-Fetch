@@ -1,0 +1,29 @@
+### ENVIAR DATOS AL SERVIDOR
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Roberto Carlos",
+    "age":"60",
+    "email":"robertoCarlos@email.com"
+}
+
+### OBTENER TODOS DATOS AL SERVIDOR
+GET http://localhost:9000/api/users HTTP/1.1
+
+### ENVIAR DATOS EN EL SERVIDOR POR EL ID
+GET http://localhost:9000/api/users/639cfdbfd828ef1372fd768d HTTP/1.1
+
+### UPDATE DATOS AL SERVIDOR
+PUT http://localhost:9000/api/users/639cfdbfd828ef1372fd768d HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Jhon Conwei",
+    "age":"60",
+    "email":"jhonconwei@email.com"
+}
+
+###
+
+DELETE http://localhost:9000/api/users/639cfdbfd828ef1372fd768d HTTP/1.1
